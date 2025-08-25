@@ -20,6 +20,10 @@ Route::resource('matriculas', MatriculaController::class);
 use App\Http\Controllers\EstudianteController;
 Route::resource('estudiantes', EstudianteController::class);
 
+use App\Http\Controllers\RecuperacionController;
+Route::resource('recursos', RecuperacionController::class);
+
+
 
 Route::get('/', function () {
     return view('welcome');
